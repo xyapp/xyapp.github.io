@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>《朗道力学》读书笔记 | XuYuan</title>
+  <meta name="author" content="XuYuan">
+  
+  <meta name="description" content="Learn | Share | Physcis">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="《朗道力学》读书笔记"/>
+  <meta property="og:site_name" content="XuYuan"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="/atom.xml" title="XuYuan" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">XuYuan</a></h1>
+  <h2><a href="/">Standing on the shoulders of giants</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/notice">通知|Notice</a></li>
+    
+      <li><a href="/archives">存档|Archives</a></li>
+    
+      <li><a href="/about">关于|About</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-03-27T12:20:02.000Z"><a href="/2014/03/27/langdaonote/">3月 27 2014</a></time>
+      
+      
+  
+    <h1 class="title">《朗道力学》读书笔记</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h1 id="《朗道力学》读书笔记">《朗道力学》读书笔记</h1>
+<h2 id="第一章：运动方程">第一章：运动方程</h2>
+<h3 id="<strong>1、广义坐标</strong>"><strong>1、广义坐标</strong></h3>
+<ul>
+<li>广义坐标相互独立；能够完全刻画物理系统的位置。</li>
+<li>实验表明：同时给定系统的所有广义坐标和广义速度就可以确定系统的状态，并且原则上也可以预测以后的运动。</li>
+<li>运动方程：加速度与速度和坐标的关系式。</li>
+</ul>
+<a id="more"></a>
+
+<h3 id="<strong>2、最小作用量原理</strong>"><strong>2、最小作用量原理</strong></h3>
+<ul>
+<li>力学系统运动规律的最一般的表述。</li>
+<li>最小作用量原理：体系的作用量的变分为零。作用量为： $S=\int_{t_1}^{t_2}{L(q,\dot{q},t)dt}$</li>
+<li>系统的拉格朗日函数$L=L(q,\dot{q},t)$，依赖于广义坐标、广义速度和时间的函数。</li>
+<li>最小作用量$\Rightarrow$朗格朗日方程（变分法推导）</li>
+<li>朗格朗日方程：<br>$$\frac{d}{dt} \frac{\partial L}{\partial \dot{q}}-\frac{\partial L}{\partial q}=0$$</li>
+<li>拉格朗日函数的可加性：$\lim{L}=L_A+L_B$；可加性允许所有力学系统的拉格朗日函数可以同乘以同一任意常数，此常数依赖于物理度量单位的选择。</li>
+<li>朗格朗日函数可以附加任意一个关于时间和坐标的函数的全导数。</li>
+</ul>
+<h3 id="<strong>3、伽利略相对性原理</strong>"><strong>3、伽利略相对性原理</strong></h3>
+<ul>
+<li>惯性参考系：空间相对它是均匀的各向同性，时间相对它是均匀的。</li>
+<li>惯性参考系中的自由质点，拉格朗日函数形式不显含径矢$\vec{r}$和时间$t$（时间和空间均匀性），$L$只是速度$\vec{v}$的函数，并且不依赖其方向，因此$L=L(v^2)$，由拉格朗日方程可得${\partial L}/{\partial v}=const$，因此可得$\vec{v}=const$。</li>
+<li>惯性定律：惯性参考系中任何自由运动的速度的大小和方向都不改变。</li>
+<li>伽利略相对性原理：存在无穷多个惯性参考系，它们相互之间做匀速直线运动，它们都是等价的，在这些参考系中时间和空间都是相同的，力学规律也是相同的。</li>
+<li>伽利略变换：两个不同的参考系$K$和$K’$，其中$K’$相对$K$以速度$\vec{V}$运动，同一个质点相对这两个参考系的坐标为$\vec{r}$和$\vec{r}$满足关系式$\vec{r}=\vec{r’}+\vec{V}t$，时间相同$t’=t$。</li>
+</ul>
+<h3 id="<strong>4、自由质点的拉格朗日函数</strong>"><strong>4、自由质点的拉格朗日函数</strong></h3>
+<ul>
+<li>质点相对于惯性参考系的自由运动，拉格朗日函数只依赖于速度的平方。惯性参考系$K$以无穷小速度$\vec{\varepsilon}$相对于惯性参考系$K’$运动，质点在两个参考系中的速度的联系为：<br>$$\vec{v’}=\vec{v}+\vec{\varepsilon}$$</li>
+<li>拉格朗日函数$L(v^2)$经伽利略变化后得到$L’(v’^2)=L(v’^2)$。</li>
+<li>由于在惯性参考系中运动方程的形式都相同，因此$L’$与$L(v^2)$只能相差某个关于时间和坐标的函数的全导数。<br>$$L’=L(v’^2)=L(v^2+2\vec{v} \cdot \varepsilon+{\varepsilon}^2)=L(v^2)+2\frac{\partial^2 L}{\partial{v}^2} \vec{v} \cdot \vec{\varepsilon}$$</li>
+<li>等式右端第二项与速度$\vec{v}$呈线性关系时，其才是时间的全导数。因此$\frac{\partial ^{2}L}{\partial {v}^{2}}$不依赖于速度。即可得到拉格朗日函数与速度平方成正比：<br>$$L=\frac{m}{2}v^2$$</li>
+<li>参考系$K$以有限速度$\vec{V}$相对$K’$运动情形，二者拉格朗日函数关系：<br>$$L’=\frac{m}{2}v’^2=\frac{m}{2}(\vec{v}+\vec{V})^2=\frac{m}{2}v^2+2\frac{m}{2}\vec{v}\cdot \vec{V}+\frac{m}{2}V^2$$<br>$$L’=L+\frac{d}{dt}(2\frac{m}{2}\vec{r} \cdot \vec{V}+\frac{m}{2}V^2t)$$</li>
+<li>物理量$m$称为质点的质量。</li>
+<li>无相互作用的质点组成的自由质点系：<br>$$L=\sum_{a}{\frac{m_av_a^2}{2}} $$</li>
+<li>拉格朗日函数可以同乘以一个相同的任意常数，相当于改变质点质量，但是不同质点的质量之间的比例关系不变。</li>
+<li>质量不可能是负的。（由最小作用量原理说明）<br>$$v^2=\left(\frac{dl}{dt}\right)^2$$</li>
+<li>只需求得特定坐标系中弧长微元$dl$的平方，即可得到拉格朗日函数。</li>
+<li>笛卡尔坐标系：$dl^2=dx^2+dy^2+dz^2$<br>$$L=\frac{m}{2}(\dot{x}^2+\dot{y}^2+\dot{z}^2)$$</li>
+<li>柱坐标系：$dl^2=\frac{m}{2}(dr^2+r^2d\varphi^2+dz^2)$<br>$$L=\frac{m}{2}(\dot{r}^2+r^2\dot{\varphi}^2+\dot{z}^2)$$</li>
+<li>球坐标系：$dl^2=\frac{m}{2}(dr^2+r^2d\theta^2+r^2\sin^2{\theta}d\varphi^2)$<br>$$L=\frac{m}{2}(\dot{r}^2+r^2\dot{\theta}^2+r^2\sin^2{\theta}\dot{\varphi}^2)$$</li>
+</ul>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+  
+  <div class="tags">
+    <a href="/tags/读书笔记/">读书笔记</a>
+  </div>
+
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <!-- Duoshuo Comment BEGIN -->
+    <div class="ds-thread"></div>
+  <script type="text/javascript">
+  var duoshuoQuery = {short_name:"physbar"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = 'http://static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0] 
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+  <!-- Duoshuo Comment END -->
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:yoursite.com">
+  </form>
+</div>
+
+  
+
+  
+<div class="widget tag">
+  <h3 class="title">最新文章</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/2014/03/27/langdaonote/">《朗道力学》读书笔记</a>
+      </li>
+    
+      <li>
+        <a href="/2014/03/17/test-post/">使用hexo发布文章</a>
+      </li>
+    
+      <li>
+        <a href="/2014/03/17/hello-world/">Hello World</a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">标签</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/读书笔记/">读书笔记</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2014 XuYuan
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+<script type="text/javascript">
+var disqus_shortname = 'XY';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>
