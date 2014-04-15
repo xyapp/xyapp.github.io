@@ -75,11 +75,11 @@ $$m_a\frac{d\vec{v_a}}{dt}=-\frac{\partial U}{\partial \vec{r_a}}=\vec{F_a}$$
 - 上式即为牛顿运动方程。
 - 势能可以增减任意常数而不改变运动方程。通常选取质点间距离无穷远时势能趋于零。
 - 笛卡尔坐标与任意广义坐标之间的变换：
-$$x_a=f_a \left( q_1,q_2,...q_s \right)$$
+$$x_a=f_a \left( q_1,q_2,...q_s \right)$$,
 
 $$\dot{x_a}=\sum_{k}{\frac{\partial f_a}{\partial q_k} \dot{q_k}}$$
 - 广义坐标下的拉格朗日函数为：
-$$L=\frac{1}{2} \sum_{i,k}{a_{i,k} (q) \dot{q_i} \dot{q_k} }-U(q)$$
+$$L=\frac{1}{2} \sum_{k,i}{ a_{k,i} (q) \dot{q_i} \dot{q_k} }-U(q)$$
 - 非封闭质点系$A$，与运动完全已知的质点系$B$相互作用。此时$A$在（由$B$）给定的外场中运动。可将质点系$A+B$的拉格朗日函数$L$中的广义坐标$q_B$用已知函数代替，由此即可以得到质点系$A$的拉格朗日函数$L$。
 - 假设质点系$A+B$是封闭的，则
 $$L=T_A\left(q_A, \dot{q_A}\right)+T_B\left(q_B, \dot{q_B}\right)-U(q_A, q_B)$$
@@ -92,3 +92,4 @@ $$L=\frac{mv^2}{2}-U\left(\vec{r}, t \right)$$
 $$m\dot{\vec{v}}=-\frac{\partial U}{\partial \vec{r}}$$
 - 对于均匀外场，势能可以写成：
 $$U=-\vec{F} \cdot \vec{r}$$
+
