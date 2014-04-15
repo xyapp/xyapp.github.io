@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>《朗道力学》读书笔记 | XuYuan</title>
+  <title>langdaonote | XuYuan</title>
   <meta name="author" content="XuYuan">
   
   <meta name="description" content="Learn | Share | Physcis">
@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="《朗道力学》读书笔记"/>
+  <meta property="og:title" content="langdaonote"/>
   <meta property="og:site_name" content="XuYuan"/>
 
   
@@ -85,14 +85,13 @@
       
       
   
-    <h1 class="title">《朗道力学》读书笔记</h1>
+    <h1 class="title">langdaonote</h1>
   
 
     </header>
     <div class="entry">
       
-        <h1 id="《朗道力学》读书笔记">《朗道力学》读书笔记</h1>
-<h2 id="第一章：运动方程">第一章：运动方程</h2>
+        <h2 id="第一章：运动方程">第一章：运动方程</h2>
 <h3 id="<strong>1、广义坐标</strong>"><strong>1、广义坐标</strong></h3>
 <ul>
 <li>广义坐标相互独立；能够完全刻画物理系统的位置。</li>
@@ -135,16 +134,45 @@
 <li>柱坐标系：$dl^2=\frac{m}{2}(dr^2+r^2d\varphi^2+dz^2)$<br>$$L=\frac{m}{2}(\dot{r}^2+r^2\dot{\varphi}^2+\dot{z}^2)$$</li>
 <li>球坐标系：$dl^2=\frac{m}{2}(dr^2+r^2d\theta^2+r^2\sin^2{\theta}d\varphi^2)$<br>$$L=\frac{m}{2}(\dot{r}^2+r^2\dot{\theta}^2+r^2\sin^2{\theta}\dot{\varphi}^2)$$</li>
 </ul>
+<h3 id="<strong>5、质点系的拉格朗日函数</strong>"><strong>5、质点系的拉格朗日函数</strong></h3>
+<ul>
+<li>封闭质点系：质点内部之间有相互作用，不受外部物体作用。</li>
+<li>封闭质点系拉格朗日函数的一般形式：<br>$$L=\sum_{a}{\frac{m_av_a^2}{2}}+U\left( \vec{r_1}, \vec{r_2}, … \right)$$</li>
+<li>拉格朗日函数形式表示时间是均匀的和各向同性的，因此用$-t$代替$t$不改变拉格朗日函数，因此不改变运动方程。经典力学的运动规律都是可逆的。</li>
+<li>质点系的势能$U=U\left( \vec{r_1}, \vec{r_2}, … \right)$，是各质点的位置坐标的函数。势能依赖于所有质点在相同时刻的分布，其中一个质点位置改变立刻影响到所有其他质点，相互作用瞬间扩散，对应经典力学的绝对时间假设和伽利略相对性原理。</li>
+<li>质点系的动能$T=\sum_{a}{\frac{m_av_a^2}{2}}$。</li>
+<li>从拉格朗日函数建立运动方程：<br>$$\frac{d}{dt} \frac{\partial L}{\partial \vec{v_a}}=\frac{\partial L}{\partial \vec{r_a}}$$</li>
+<li>代入拉格朗日函数形式可得：<br>$$m_a\frac{d\vec{v_a}}{dt}=-\frac{\partial U}{\partial \vec{r_a}}=\vec{F_a}$$</li>
+<li>上式即为牛顿运动方程。</li>
+<li>势能可以增减任意常数而不改变运动方程。通常选取质点间距离无穷远时势能趋于零。</li>
+<li>笛卡尔坐标与任意广义坐标之间的变换：<br>$$x_a=f_a \left( q_1,q_2,…q_s \right)$$</li>
+</ul>
+<p>$$\dot{x<em>a}=\sum</em>{k}{\frac{\partial f_a}{\partial q_k} \dot{q_k}}$$</p>
+<ul>
+<li>广义坐标下的拉格朗日函数为：<br>$$L=\frac{1}{2} \sum<em>{i,k}{a</em>{i,k} (q) \dot{q_i} \dot{q_k} }-U(q)$$</li>
+<li>非封闭质点系$A$，与运动完全已知的质点系$B$相互作用。此时$A$在（由$B$）给定的外场中运动。可将质点系$A+B$的拉格朗日函数$L$中的广义坐标$q_B$用已知函数代替，由此即可以得到质点系$A$的拉格朗日函数$L$。</li>
+<li>假设质点系$A+B$是封闭的，则<br>$$L=T_A\left(q_A, \dot{q_A}\right)+T_B\left(q_B, \dot{q_B}\right)-U(q_A, q_B)$$</li>
+<li>将广义坐标$q_B$用已知的时间函数代替，$T_B\left(q_B, \dot{q_B}\right)$为某个时间函数的全微分，可以从朗格朗日函数中略去，则：<br>$$L=T_A\left(q_A, \dot{q_A}\right)-U\left(q_A, q_B(t)\right)$$</li>
+<li>外场中运动的质点系的拉格朗日函数的势能可能显含时间。</li>
+<li>对于在外场中运动的质点：<br>$$L=\frac{mv^2}{2}-U\left(\vec{r}, t \right)$$</li>
+<li>对应运动方程为：<br>$$m\dot{\vec{v}}=-\frac{\partial U}{\partial \vec{r}}$$</li>
+<li>对于均匀外场，势能可以写成：<br>$$U=-\vec{F} \cdot \vec{r}$$</li>
+</ul>
 
       
     </div>
     <footer>
       
         
+  
+  <div class="categories">
+    <a href="/categories/Landau/">Landau</a>
+  </div>
+
         
   
   <div class="tags">
-    <a href="/tags/读书笔记/">读书笔记</a>
+    <a href="/tags/Landau/">Landau</a>, <a href="/tags/mechanics/">mechanics</a>
   </div>
 
         
@@ -182,6 +210,15 @@
 </div>
 
   
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/Landau/">Landau</a><small>1</small></li>
+  
+  </ul>
+</div>
+
 
   
 <div class="widget tag">
@@ -189,7 +226,7 @@
   <ul class="entry">
     
       <li>
-        <a href="/2014/03/27/langdaonote/">《朗道力学》读书笔记</a>
+        <a href="/2014/03/27/langdaonote/">langdaonote</a>
       </li>
     
       <li>
@@ -209,7 +246,9 @@
   <h3 class="title">标签</h3>
   <ul class="entry">
   
-    <li><a href="/tags/读书笔记/">读书笔记</a><small>1</small></li>
+    <li><a href="/tags/Landau/">Landau</a><small>1</small></li>
+  
+    <li><a href="/tags/mechanics/">mechanics</a><small>1</small></li>
   
   </ul>
 </div>

@@ -1,8 +1,8 @@
-title: 《朗道力学》读书笔记
+title: langdaonote
 date: 2014-03-27 20:20:02
-tags: 读书笔记
+categories: Landau
+tags: [Landau, mechanics]
 ---
-#《朗道力学》读书笔记
 
 
 
@@ -60,3 +60,35 @@ $$L=\frac{m}{2}(\dot{x}^2+\dot{y}^2+\dot{z}^2)$$
 $$L=\frac{m}{2}(\dot{r}^2+r^2\dot{\varphi}^2+\dot{z}^2)$$
 - 球坐标系：$dl^2=\frac{m}{2}(dr^2+r^2d\theta^2+r^2\sin^2{\theta}d\varphi^2)$
 $$L=\frac{m}{2}(\dot{r}^2+r^2\dot{\theta}^2+r^2\sin^2{\theta}\dot{\varphi}^2)$$
+
+###**5、质点系的拉格朗日函数**
+- 封闭质点系：质点内部之间有相互作用，不受外部物体作用。
+- 封闭质点系拉格朗日函数的一般形式：
+$$L=\sum_{a}{\frac{m_av_a^2}{2}}+U\left( \vec{r_1}, \vec{r_2}, ... \right)$$
+- 拉格朗日函数形式表示时间是均匀的和各向同性的，因此用$-t$代替$t$不改变拉格朗日函数，因此不改变运动方程。经典力学的运动规律都是可逆的。
+- 质点系的势能$U=U\left( \vec{r_1}, \vec{r_2}, ... \right)$，是各质点的位置坐标的函数。势能依赖于所有质点在相同时刻的分布，其中一个质点位置改变立刻影响到所有其他质点，相互作用瞬间扩散，对应经典力学的绝对时间假设和伽利略相对性原理。
+- 质点系的动能$T=\sum_{a}{\frac{m_av_a^2}{2}}$。
+- 从拉格朗日函数建立运动方程：
+$$\frac{d}{dt} \frac{\partial L}{\partial \vec{v_a}}=\frac{\partial L}{\partial \vec{r_a}}$$
+- 代入拉格朗日函数形式可得：
+$$m_a\frac{d\vec{v_a}}{dt}=-\frac{\partial U}{\partial \vec{r_a}}=\vec{F_a}$$
+- 上式即为牛顿运动方程。
+- 势能可以增减任意常数而不改变运动方程。通常选取质点间距离无穷远时势能趋于零。
+- 笛卡尔坐标与任意广义坐标之间的变换：
+$$x_a=f_a \left( q_1,q_2,...q_s \right)$$
+
+$$\dot{x_a}=\sum_{k}{\frac{\partial f_a}{\partial q_k} \dot{q_k}}$$
+- 广义坐标下的拉格朗日函数为：
+$$L=\frac{1}{2} \sum_{i,k}{a_{i,k} (q) \dot{q_i} \dot{q_k} }-U(q)$$
+- 非封闭质点系$A$，与运动完全已知的质点系$B$相互作用。此时$A$在（由$B$）给定的外场中运动。可将质点系$A+B$的拉格朗日函数$L$中的广义坐标$q_B$用已知函数代替，由此即可以得到质点系$A$的拉格朗日函数$L$。
+- 假设质点系$A+B$是封闭的，则
+$$L=T_A\left(q_A, \dot{q_A}\right)+T_B\left(q_B, \dot{q_B}\right)-U(q_A, q_B)$$
+- 将广义坐标$q_B$用已知的时间函数代替，$T_B\left(q_B, \dot{q_B}\right)$为某个时间函数的全微分，可以从朗格朗日函数中略去，则：
+$$L=T_A\left(q_A, \dot{q_A}\right)-U\left(q_A, q_B(t)\right)$$
+- 外场中运动的质点系的拉格朗日函数的势能可能显含时间。
+- 对于在外场中运动的质点：
+$$L=\frac{mv^2}{2}-U\left(\vec{r}, t \right)$$
+- 对应运动方程为：
+$$m\dot{\vec{v}}=-\frac{\partial U}{\partial \vec{r}}$$
+- 对于均匀外场，势能可以写成：
+$$U=-\vec{F} \cdot \vec{r}$$
