@@ -17,7 +17,7 @@ twitter:
   show_replies: false
   tweet_count: 5
 
-duoshuo_shortname: XY
+duoshuo_shortname: 
 
 # turn off social sharing
 addthis:
