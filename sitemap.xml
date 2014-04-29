@@ -7,18 +7,18 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/notice/index.html</loc>
-    <lastmod>2014-04-02T17:07:38.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/about/index.html</loc>
     <lastmod>2014-03-30T09:23:01.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://yoursite.com/images/README.html</loc>
-    <lastmod>2014-04-29T14:49:17.000Z</lastmod>
+    <lastmod>2014-04-29T15:43:51.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/notice/index.html</loc>
+    <lastmod>2014-04-02T17:07:38.000Z</lastmod>
   </url>
   
 </urlset>
