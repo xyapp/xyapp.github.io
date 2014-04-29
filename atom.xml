@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Standing on the shoulders of giants]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2014-04-29T14:58:07.964Z</updated>
+  <updated>2014-04-29T15:38:12.455Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,34 +15,44 @@
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[使用hexo发布文章]]></title>
-    <link href="http://yoursite.com/2014/03/17/test-post/"/>
-    <id>http://yoursite.com/2014/03/17/test-post/</id>
-    <published>2014-03-17T07:32:53.000Z</published>
-    <updated>2014-04-29T13:40:21.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="简易使用hexo教程">简易使用hexo教程</h2>
-<p>刚练习了一下，效果还勉强凑活，整理一下。以下操作的前提是已经对github和hexo进行了正确的配置。</p>
+    <title><![CDATA[My First Blog]]></title>
+    <link href="http://yoursite.com/2014/04/29/My%20First%20Blog/"/>
+    <id>http://yoursite.com/2014/04/29/My First Blog/</id>
+    <published>2014-04-29T07:32:53.000Z</published>
+    <updated>2014-04-29T15:37:27.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="This_is_the_first_Blog_of_XuYuan">This is the first Blog of XuYuan</h3>
 <ul>
-<li>在hexo文件夹下右键选择git bash</li>
-<li>在弹出窗口中输入’hexo new “my new post”‘</li>
-<li>在文件夹hexo\source\ _post中打开这个文件，记事本打开，或者sublime打开都可以。运用markdown语法修改该文件即可。</li>
-<li>在之前命令窗口输入’hexo server’，再到浏览器中输入localhost:4000进行效果预览。</li>
-<li>在命令窗口中输入’hexo deploy’，将该文件同步到github网站，在网站中查看效果。 </li>
+<li>Learning</li>
+<li>Sharing</li>
+<li>Communiting</li>
 </ul>
+<a id="more"></a>
+
+
+<p>这个博客主要是作为一个学习、分享和交流的平台，同时也作为自己的个人主页，会不定期发布自己的阅读体验和心得，也会记录自己的阅读笔记以作备份。</p>
+<p>拟打算在本博客平台发布的主要内容有：</p>
+<ol>
+<li>物理基础知识的学习笔记总结和知识点；</li>
+<li>git、hexo等使用过程中的一些心得体会和方法；</li>
+<li>自己在研究生科研过程中学到的一些东西；</li>
+<li>其他类书籍阅读后的一些心得体会。</li>
+</ol>
+<p>建立这个博客空间确实费了很大一番功夫，感谢一下某某同学和某某同学。</p>
+<p>随后我会介绍自己零基础入门hexo的整个过程，供一些和我一样完全不懂的人来学习参考，避免走很多弯路。我现在还是在不断的摸索与实践过程中，还有好多东西需要慢慢的尝试。</p>
+<p>一切都需要慢慢积累，不停学习，不断完善。</p>
+<p>我在路上。。</p>
 ]]></content>
+    <summary type="html"><![CDATA[<h3 id="This_is_the_first_Blog_of_XuYuan">This is the first Blog of XuYuan</h3>
+<ul>
+<li>Learning</li>
+<li>Sharing</li>
+<li>Communiting</li>
+</ul>
+]]></summary>
     
+      <category term="introduction" scheme="http://yoursite.com/tags/introduction/"/>
     
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <link href="http://yoursite.com/2014/03/17/hello-world/"/>
-    <id>http://yoursite.com/2014/03/17/hello-world/</id>
-    <published>2014-03-17T07:09:26.000Z</published>
-    <updated>2014-04-29T13:40:21.000Z</updated>
-    <content type="html"><![CDATA[<p>Welcome to <a href="http://zespia.tw/hexo" target="_blank">Hexo</a>! This is your very first post. Check <a href="http://zespia.tw/hexo/docs" target="_blank">documentation</a> to learn how to use.</p>
-]]></content>
-    
+      <category term="Introduction" scheme="http://yoursite.com/categories/Introduction/"/>
     
   </entry>
   
