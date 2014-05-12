@@ -1,0 +1,368 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Quickly Using Git and Hexo | XuYuan</title>
+  <meta name="author" content="XuYuan">
+  
+  <meta name="description" content="Learn | Share | Physcis">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="Quickly Using Git and Hexo"/>
+  <meta property="og:site_name" content="XuYuan"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="/atom.xml" title="XuYuan" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">XuYuan</a></h1>
+  <h2><a href="/">Standing on the shoulders of giants</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/notice">通知|Notice</a></li>
+    
+      <li><a href="/archives">存档|Archives</a></li>
+    
+      <li><a href="/about">关于|About</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-05-11T12:48:35.000Z"><a href="/2014/05/11/quickly-using-git/">5月 11 2014</a></time>
+      
+      
+  
+    <h1 class="title">Quickly Using Git and Hexo</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h3 id="An_Introduction_of_Using_Git_and_Hexo_to_Build_My_Blog">An Introduction of Using Git and Hexo to Build My Blog</h3>
+<p>这篇文章是我自己的操作过程的详细介绍说明，在这里列出详细步骤，以作备份供随时查看。</p>
+<p>本篇文章只是一个简单的入门操作，更深层次的高级用法请查看其他相关的教程，在<a href="http://xyapp.github.io/notice/" target="_blank">这里</a>有给出相关链接。</p>
+<a id="more"></a>
+
+<h3 id="一、首先下载和安装git。具体操作可以参看Zippera’s_Blog，其中有详细的介绍。">一、首先下载和安装git。具体操作可以参看<a href="http://zipperary.com/2013/05/28/hexo-guide-2/" target="_blank">Zippera’s Blog</a>，其中有详细的介绍。</h3>
+<h3 id="二、在github主页注册一个账户，并建立自己相应的版本库。">二、在<a href="https://github.com/" target="_blank">github主页</a>注册一个账户，并建立自己相应的版本库。</h3>
+<h3 id="三、把远程版本库同步到本地并发表博客的基本流程">三、把远程版本库同步到本地并发表博客的基本流程</h3>
+<h2 id="1、先把远程版本库克隆到本地">1、先把远程版本库克隆到本地</h2>
+<ul>
+<li>先在本地一个工作文件夹（空文件夹，如E/MyBlog）下右键选择git bush。</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre>git clone git@github<span class="preprocessor">.com</span>:xyapp/xyapp<span class="preprocessor">.github</span><span class="preprocessor">.io</span>
+<span class="preprocessor"># 注释：上述命令是将PhysBar账户下的xyapp.github.io版本库克隆到本地E/MyBlog/xyapp.github.io文件夹中。</span>
+cd xyapp<span class="preprocessor">.github</span><span class="preprocessor">.io</span>
+<span class="preprocessor"># 注释：原来是在E/xyapp目录中，上述命令使得进入到E/MyBlog/xyapp.github.io这个目录，亦即进入到对应的xyapp.github.io版本库，默认是在master主分支上。所有的git操作都在版本库中进行。</span>
+cd ..
+<span class="preprocessor"># 注释：上述命令返回上一级目录，亦即返回到E/MyBlog目录。</span>
+ls
+<span class="preprocessor"># 注释：上述命令返回当前目录内的文件夹和文件列表</span>
+</pre></td></tr></table></figure>
+
+<h2 id="2、创建和切换分支">2、创建和切换分支</h2>
+<ul>
+<li>刚从远程克隆到本地的版本库中只含有master主分支，不含有其他分支。例如先进入到xyapp.git.io版本库</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+</pre></td><td class="code"><pre>git branch
+<span class="preprocessor"># 注释：查看当前版本库的分支。可以看到目前只有master分支。</span>
+git checkout -b hexo origin/hexo
+<span class="preprocessor"># 注释：在本地创建hexo分支并切换到hexo分支，并让本地的hexo分支与远程的hexo分支关联起来。</span>
+</pre></td></tr></table></figure>
+
+<ul>
+<li>此时使用<strong>git branch</strong>命令即可查看到有两个分支，并且当前所在分支为hexo分支。</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre>git checkout master
+<span class="preprocessor"># 注释：切换到master分支，可以使用该命令随意切换分支。</span>
+</pre></td></tr></table></figure>
+
+<ul>
+<li>同样的步骤可以在其他三个版本库中创建和切换不同的分支。</li>
+</ul>
+<h2 id="3、发布博客文件并把文件加入到版本库并推送到远程">3、发布博客文件并把文件加入到版本库并推送到远程</h2>
+<ul>
+<li>先使用命令<strong>cd xyapp.git.io</strong>进入到xyapp.git.io版本库，再使用<strong>git checkout hexo</strong>进入到hexo分支,再使用<strong>ls</strong>查看当前版本库当前分支中的文件结构，再使用<strong>cd Hexo</strong>进入到Hexo文件夹。</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre>hexo <span class="keyword">new</span> <span class="string">"newblog"</span>
+<span class="preprocessor"># 注释：创建文件名为newblog的新博客文章。</span>
+</pre></td></tr></table></figure>
+
+<ul>
+<li>关掉命令窗口，在目录E/MyBlog/xyapp.git.io/Hexo/source/_posts中找到新建的newblog.md文件。</li>
+<li>使用markdown语言在sublime编辑器中编辑修改该文件。修改完后保存。</li>
+<li>在目录E/MyBlog/xyapp.git.io/Hexo中右键选择git bush</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre>hexo g
+<span class="preprocessor"># 注释：将上述编辑好的md文件生成博客文件</span>
+hexo s
+<span class="preprocessor"># 注释：在本地查看文章效果。在浏览器中输入上面显示的地址即可进行查看。查看过后，在命令行窗口中Ctrl+C键结束。</span>
+hexo d
+<span class="preprocessor"># 注释：将该文章发布到博客上，提交过程会提示让输入用户名和密码。提交成功后就会在[XuYuan主页][XuYuan主页]上查看到最新发布的文章。</span>
+</pre></td></tr></table></figure>
+
+<ul>
+<li>接下来需要将新添加的文件加入到git版本控制系统中。先使用<strong>cd ..</strong>命令返回到xyapp.git.io版本库的根目录。</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre>git status
+<span class="preprocessor"># 注释：上述命令显示当前工作区中文件的状态，并会有提示是否有文件需要加入到版本库或者提交到版本库。</span>
+git add -A （或者git add newblog.md）
+<span class="preprocessor"># 注释：上述命令将所有文件修改（或者是newblog.md这个文件）准备加入到版本库，这时并没有真正将该文件放入到版本库。</span>
+git commit -m <span class="string">"add a newblog file"</span>
+<span class="preprocessor"># 注释：上述命令是将工作区的所有修改提交到本地版本库中。add a newblog file是对此次提交的说明文字，可以任意修改，方便后期查看历史提交记录。</span>
+git push origin hexo
+<span class="preprocessor"># 注释：把本地的版本库修改提交到远程对应的版本库分支中。</span>
+</pre></td></tr></table></figure>
+
+<h2 id="4、从远程库更新最新的版本库到本地">4、从远程库更新最新的版本库到本地</h2>
+<ul>
+<li>如果别人对远程版本库进行了修改，在工作之前要先把本地的版本库和远程的版本库同步。</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre>git pull
+<span class="preprocessor"># 注释：上述命令把远程库更新到本地，使本地的版本库中的所有内容与远程库中同步。</span>
+</pre></td></tr></table></figure>
+
+<p>=================================================================================</p>
+<h2 id="一般的工作周期">一般的工作周期</h2>
+<p>1 先进入到本地工作区的xyapp.github.io版本库，切换到hexo分支，拉取远程最新版本库到本地</p>
+<ul>
+<li><strong>cd xyapp.github.io</strong></li>
+<li><strong>git checkout hexo</strong></li>
+<li><strong>cd Hexo</strong></li>
+<li><strong>git pull</strong></li>
+</ul>
+<p>2 在本地工作区修改文件,生成博客文件</p>
+<ul>
+<li><strong>hexo new “new blog”</strong></li>
+<li><strong>hexo g</strong></li>
+<li><strong>hexo s</strong></li>
+<li><strong>hexo d</strong></li>
+</ul>
+<p>3 将本地文件修改加入到本地的版本库中</p>
+<ul>
+<li><strong>git add -A</strong></li>
+<li><strong>git commit -m “describing the commit”</strong></li>
+</ul>
+<p>4 将本地版本库推送到远程版本库</p>
+<ul>
+<li><strong>git push origin hexo</strong></li>
+</ul>
+<p><strong>说明</strong>：在进行上述步骤的过程中，可以随时使用<strong>git branch</strong>查看当前所在分支信息；使用<strong>git status</strong>查看当前工作状态，根据提示进行下一步操作；使用<strong>git log</strong>显示提交历史记录。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/Tools/">Tools</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/git/">git</a>, <a href="/tags/hexo/">hexo</a>
+  </div>
+
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <!-- Duoshuo Comment BEGIN -->
+    <div class="ds-thread"></div>
+  <script type="text/javascript">
+  var duoshuoQuery = {short_name:"physbar"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = 'http://static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0] 
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+  <!-- Duoshuo Comment END -->
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:yoursite.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/Introduction/">Introduction</a><small>1</small></li>
+  
+    <li><a href="/categories/Tools/">Tools</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">最新文章</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/2014/05/11/quickly-using-git/">Quickly Using Git and Hexo</a>
+      </li>
+    
+      <li>
+        <a href="/2014/04/29/My First Blog/">My First Blog</a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">标签</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/git/">git</a><small>1</small></li>
+  
+    <li><a href="/tags/hexo/">hexo</a><small>1</small></li>
+  
+    <li><a href="/tags/introduction/">introduction</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2014 XuYuan
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+<script type="text/javascript">
+var disqus_shortname = 'XY';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>
