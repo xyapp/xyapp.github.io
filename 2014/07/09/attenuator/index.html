@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>git | XuYuan</title>
+  <title>Attenuator | XuYuan</title>
   <meta name="author" content="XuYuan">
   
   <meta name="description" content="Learn | Share | Physcis">
@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="Attenuator"/>
   <meta property="og:site_name" content="XuYuan"/>
 
   
@@ -75,25 +75,105 @@
 </nav>
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
-<h2 class="archive-title tag">git</h2>
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-07-09T03:50:35.000Z"><a href="/2014/07/09/attenuator/">7月 9 2014</a></time>
+      
+      
+  
+    <h1 class="title">Attenuator</h1>
+  
 
+    </header>
+    <div class="entry">
+      
+        <p>An attenuator is an electronic device that reduces the power of a signal without appreciably distorting its waveform.<br>An attenuator is effectively the opposite of an amplifer. While an amplifer provides gain, an attenuator provides loss.</p>
+<a id="more"></a>
 
-  <div class="archive">
-    
-      <article class="post">
-        <div class="post-content">
-          <header>
-            <div class="icon"></div>
-            <time datetime="2014-05-11T12:48:35.000Z"><a href="/2014/05/11/quickly-using-git/">5月 11 2014</a></time>
-            
-              <h1 class="title"><a href="/2014/05/11/quickly-using-git/">Quickly Using Git and Hexo</a></h1>
-            
-          </header>
-        </div>
-      </article>
-    
+<p>Widly used is the matching T type attenuator. Its circuit model is as follows.<br><img src="http://www.electronics-tutorials.ws/attenuators/attn22.gif" alt="matching T type attenuator model"></p>
+<p>Calculate the matching T type attenuator.</p>
+<p>The matching input impedance $Zin$ and output impedance $Zout$ must satisfy:<br>$$Zin=R_1+R_3//(R_2+Zout)$$<br>$$Zout=R_2+R_3//(R_1+Zin)$$<br>$$\frac{Vin}{Zin}R_3//(R_2+Zout)=\frac{Vout}{Zout}(R_2+Zout)$$<br>From Solving the above three equations, we can get<br>$$R_1=\frac{ZinZout-2ZinZout\alpha+Zin^2\alpha^2}{Zout-Zin\alpha^2}$$<br>$$R_2=\frac{Zout^2-2ZinZout\alpha+ZinZout\alpha^2}{Zout-Zin\alpha^2}$$<br>$$R_3=\frac{2ZinZout\alpha}{Zout-Zin\alpha^2}$$<br>where the $\alpha=\frac{Vout}{Vin}$.</p>
+<p>In general situation, the input and output impendance $Zin$ and $Zout$ are the same and both equal to $50\Omega$. The T type attenuator is also the balanced one. Therefore, we could simplify the above equations as follows.<br>$$R_1=R_2=Zin\frac{1-\alpha}{1+\alpha}$$<br>$$R_3=Zin \frac{2\alpha}{1-\alpha^2}$$<br>Usually, the attenuation is described in dB, that is to say $\kappa=-20\log{\frac{Vout}{Vin}}=-20\log{\alpha}$ dB.<br>Then we can get the voltage loss ratio is $\alpha=\frac{Vout}{Vin}=10^{-\frac{\kappa}{20}}$</p>
+<p>Therefore, from the attenuation and input and output impendance, we can caculate the internal resistance.</p>
+<p>For example:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Attenuation</th>
+<th style="text-align:left">$R_1=R_2$</th>
+<th style="text-align:left">$R_3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">5dB</td>
+<td style="text-align:left">14.006 $\Omega$</td>
+<td style="text-align:left">82.241 $\Omega$</td>
+</tr>
+<tr>
+<td style="text-align:left">10dB</td>
+<td style="text-align:left">25.972$\Omega$</td>
+<td style="text-align:left">35.136$\Omega$</td>
+</tr>
+<tr>
+<td style="text-align:left">20dB</td>
+<td style="text-align:left">40.909$\Omega$</td>
+<td style="text-align:left">10.101$\Omega$</td>
+</tr>
+<tr>
+<td style="text-align:left">50dB</td>
+<td style="text-align:left">49.685$\Omega$</td>
+<td style="text-align:left">0.316$\Omega$</td>
+</tr>
+</tbody>
+</table>
+<p>You can find more informations from the website <a href="http://chemandy.com/calculators/matching-t-attenuator-calculator.htm" target="_blank">CHEMANDY ELECTRONICS</a> and <a href="http://en.wikipedia.org/wiki/Attenuator_%28electronics%29" target="_blank">Wikipedia of attenuator</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/Microwave Instrument/">Microwave Instrument</a>
   </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/Microwave Instrument/">Microwave Instrument</a>, <a href="/tags/Attenuator/">Attenuator</a>
+  </div>
+
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <!-- Duoshuo Comment BEGIN -->
+    <div class="ds-thread"></div>
+  <script type="text/javascript">
+  var duoshuoQuery = {short_name:"xylpp"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = 'http://static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0] 
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+  <!-- Duoshuo Comment END -->
+</section>
+
 </div></div>
     <aside id="sidebar" class="alignright">
   <div class="search">
@@ -190,7 +270,7 @@ var disqus_shortname = 'XY';
   var dsq = document.createElement('script');
   dsq.type = 'text/javascript';
   dsq.async = true;
-  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 }());
 </script>
