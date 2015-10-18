@@ -1,8 +1,8 @@
-date: 2014-04-15 19:05:00.506
-argv: d:\Program Files\nodejs\node.exe c:\Users\源\AppData\Roaming\npm\node_modules\hexo\bin\hexo s
-os: Windows_NT 6.2.9200 win32 ia32
+date: 2015-10-18 16:35:56.535
+argv: d:\Program Files\nodejs\node.exe c:\Users\Administrator\AppData\Roaming\npm\node_modules\hexo\bin\hexo d
+os: Windows_NT 6.1.7601 win32 ia32
 version:
-  hexo: 2.5.2
+  hexo: 2.5.6
   http_parser: 1.0
   node: 0.10.26
   v8: 3.14.5.9
@@ -13,86 +13,11 @@ version:
   openssl: 1.0.1e
 ---
 
-[debug] 19:05:00.358 Config file loaded
-[debug] 19:05:00.361 Version info checked successfully
-[debug] 19:05:00.391 Loading database.
-[debug] 19:05:00.457 Processed: _drafts/README.md
-[debug] 19:05:00.467 Processed: LICENSE
-[debug] 19:05:00.467 Processed: README.md
-[debug] 19:05:00.481 Processed: source/css/_base/layout.styl
-[debug] 19:05:00.481 Processed: source/css/_base/utils.styl
-[debug] 19:05:00.481 Processed: source/css/_base/variable.styl
-[debug] 19:05:00.482 Processed: source/css/_partial/archive.styl
-[debug] 19:05:00.482 Processed: source/css/_partial/article.styl
-[debug] 19:05:00.482 Processed: source/css/_partial/comment.styl
-[debug] 19:05:00.482 Processed: source/css/_partial/footer.styl
-[debug] 19:05:00.482 Processed: source/css/_partial/header.styl
-[debug] 19:05:00.482 Processed: source/css/_partial/index.styl
-[debug] 19:05:00.482 Processed: source/css/_partial/sidebar.styl
-[debug] 19:05:00.482 Processed: source/css/_partial/syntax.styl
-[debug] 19:05:00.484 Processed: source/js/gallery.js
-[debug] 19:05:00.484 Processed: source/js/jquery.imagesloaded.min.js
-[debug] 19:05:00.485 Processed: source/fancybox/blank.gif
-[debug] 19:05:00.488 Processed: source/fancybox/fancybox_loading.gif
-[debug] 19:05:00.488 Processed: source/fancybox/fancybox_loading@2x.gif
-[debug] 19:05:00.488 Processed: source/fancybox/fancybox_sprite.png
-[debug] 19:05:00.489 Processed: source/fancybox/fancybox_overlay.png
-[debug] 19:05:00.489 Processed: source/fancybox/fancybox_sprite@2x.png
-[debug] 19:05:00.489 Processed: source/fancybox/jquery.fancybox.css
-[debug] 19:05:00.490 Processed: source/fancybox/jquery.fancybox.pack.js
-[debug] 19:05:00.490 Processed: source/css/style.styl
-[debug] 19:05:00.490 Processed: source/css/font/fontawesome-webfont.svg
-[debug] 19:05:00.490 Processed: source/css/font/fontawesome-webfont.eot
-[debug] 19:05:00.490 Processed: source/css/font/fontawesome-webfont.ttf
-[debug] 19:05:00.491 Processed: source/css/font/fontawesome-webfont.woff
-[error] 19:05:00.494 HexoError: Process failed: _posts/langdaonote.md
-Error: Unexpected closing curly brace on line 88 in file e:\My blog workplace\xyapp.github.io\Hexo\source\_posts\langdaonote.md.
-    at Object.exports.throwError (c:\Users\源\AppData\Roaming\npm\node_modules\hexo\node_modules\swig\lib\utils.js:183:9)
-    at Object.TokenParser.parseToken (c:\Users\源\AppData\Roaming\npm\node_modules\hexo\node_modules\swig\lib\parser.js:331:15)
-    at c:\Users\源\AppData\Roaming\npm\node_modules\hexo\node_modules\swig\lib\parser.js:86:12
-    at Object.exports.each (c:\Users\源\AppData\Roaming\npm\node_modules\hexo\node_modules\swig\lib\utils.js:45:11)
-    at Object.TokenParser.parse (c:\Users\源\AppData\Roaming\npm\node_modules\hexo\node_modules\swig\lib\parser.js:76:11)
-    at parseVariable (c:\Users\源\AppData\Roaming\npm\node_modules\hexo\node_modules\swig\lib\parser.js:486:18)
-    at c:\Users\源\AppData\Roaming\npm\node_modules\hexo\node_modules\swig\lib\parser.js:633:15
-    at Object.exports.each (c:\Users\源\AppData\Roaming\npm\node_modules\hexo\node_modules\swig\lib\utils.js:45:11)
-    at Object.exports.parse (c:\Users\源\AppData\Roaming\npm\node_modules\hexo\node_modules\swig\lib\parser.js:622:9)
-    at parse (c:\Users\源\AppData\Roaming\npm\node_modules\hexo\node_modules\swig\lib\swig.js:349:19)
-
-[debug] 19:05:00.504 Processed: layout/archive.ejs
-[debug] 19:05:00.504 Processed: layout/category.ejs
-[debug] 19:05:00.504 Processed: layout/index.ejs
-[debug] 19:05:00.505 Processed: layout/layout.ejs
-[debug] 19:05:00.505 Processed: layout/post.ejs
-[debug] 19:05:00.505 Processed: layout/page.ejs
-[debug] 19:05:00.505 Processed: layout/tag.ejs
-[debug] 19:05:00.505 Processed: layout/_widget/category.ejs
-[debug] 19:05:00.505 Processed: layout/_widget/recent_posts.ejs
-[debug] 19:05:00.505 Processed: layout/_widget/tag.ejs
-[debug] 19:05:00.505 Processed: layout/_widget/search.ejs
-[debug] 19:05:00.505 Processed: layout/_widget/tagcloud.ejs
-[debug] 19:05:00.505 Processed: layout/_partial/after_footer.ejs
-[debug] 19:05:00.505 Processed: layout/_partial/archive.ejs
-[debug] 19:05:00.505 Processed: layout/_partial/article.ejs
-[debug] 19:05:00.505 Processed: layout/_partial/comment.ejs
-[debug] 19:05:00.505 Processed: layout/_partial/facebook_comment.ejs
-[debug] 19:05:00.505 Processed: layout/_partial/head.ejs
-[debug] 19:05:00.506 Processed: layout/_partial/google_analytics.ejs
-[debug] 19:05:00.506 Processed: layout/_partial/header.ejs
-[debug] 19:05:00.506 Processed: layout/_partial/footer.ejs
-[debug] 19:05:00.506 Processed: layout/_partial/math-jax.ejs
-[debug] 19:05:00.506 Processed: layout/_partial/sidebar.ejs
-[debug] 19:05:00.506 Processed: layout/_partial/pagination.ejs
-[debug] 19:05:00.506 Processed: layout/_partial/post/category.ejs
-[debug] 19:05:00.506 Processed: layout/_partial/post/gallery.ejs
-[debug] 19:05:00.506 Processed: layout/_partial/post/share.ejs
-[debug] 19:05:00.506 Processed: layout/_partial/post/tag.ejs
-[debug] 19:05:00.506 Processed: layout/_partial/post/title.ejs
-[debug] 19:05:00.517 Theme config loaded
-[debug] 19:05:00.517 Processed: _config.yml
-[debug] 19:05:00.517 Processed: languages/de.yml
-[debug] 19:05:00.518 Processed: languages/default.yml
-[debug] 19:05:00.518 Processed: languages/es.yml
-[debug] 19:05:00.518 Processed: languages/ru.yml
-[debug] 19:05:00.519 Processed: languages/zh-CN.yml
-[debug] 19:05:00.520 Processed: languages/zh-TW.yml
-[debug] 19:05:00.520 Processed: images/README.md
+[debug] 16:35:55.572 Config file loaded
+[debug] 16:35:55.577 Version info checked successfully
+[debug] 16:35:55.663 Loading database.
+[info] 16:35:55.773 Start deploying: github
+[info] 16:35:55.782 Clearing .deploy folder...
+[info] 16:35:55.885 Copying files from public folder...
+[error] 16:35:55.911 Error: EPERM, mkdir 'e:\MyBlog\xyapp.github.io\Hexo\.deploy\2014'
+Error: EPERM, mkdir 'e:\MyBlog\xyapp.github.io\Hexo\.deploy\2014'
