@@ -4,13 +4,11 @@ date: 2014-03-30 17:23:01
 
 > This is XuYuan's homepage.
 
-> It's used as a platform of learning, sharing and communicating.
+> Learning
 
-> Thank my girlfriend for her support and encouragement.
+> Sharing
 
-> Thank the technical assurance of hexo, git and github.
-
-> **Welcome!**
+> Communicating
 
 
 > ![XuYuan](logo.png)
